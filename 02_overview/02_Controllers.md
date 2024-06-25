@@ -2,6 +2,9 @@
 
 Controller sind dafür verantwortlich, eingehende Anfragen zu bearbeiten und Antworten an den Client zurückzusenden.
 
+![Controller](Controllers_1.png)
+
+
 Ein Controller hat die Aufgabe, spezifische Anfragen für die Anwendung zu empfangen. Der Routing-Mechanismus steuert, welcher Controller welche Anfragen erhält. Häufig hat jeder Controller mehr als eine Route, und unterschiedliche Routen können verschiedene Aktionen ausführen.
 
 Um einen grundlegenden Controller zu erstellen, verwenden wir Klassen und Dekoratoren. Dekoratoren verknüpfen Klassen mit den erforderlichen Metadaten und ermöglichen es Nest, eine Routing-Karte zu erstellen (Anfragen den entsprechenden Controllern zuzuordnen).

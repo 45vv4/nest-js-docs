@@ -2,6 +2,8 @@
 
 Ein Pipe ist eine Klasse, die mit dem `@Injectable()`-Dekorator annotiert ist und das `PipeTransform`-Interface implementiert.
 
+![Pipe](Pipe_1.png)
+
 ### Pipes haben zwei typische Anwendungsfälle:
 
 1. **Transformation**: Eingabedaten in die gewünschte Form transformieren (z. B. von String zu Integer)

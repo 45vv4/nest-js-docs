@@ -3,6 +3,8 @@
 
 NestJS verfügt über eine integrierte Ausnahmeschicht, die für die Verarbeitung aller unbehandelten Ausnahmen in einer Anwendung verantwortlich ist. Wenn eine Ausnahme nicht von Ihrem Anwendungscode behandelt wird, wird sie von dieser Schicht erfasst, die dann automatisch eine benutzerfreundliche Antwort sendet.
 
+![Filter](Filter_1.png)
+
 Standardmäßig wird diese Aktion von einem eingebauten globalen Ausnahmefilter durchgeführt, der Ausnahmen vom Typ `HttpException` (und dessen Unterklassen) behandelt. Wenn eine Ausnahme nicht erkannt wird (weder `HttpException` noch eine Klasse, die von `HttpException` erbt), generiert der eingebaute Ausnahmefilter die folgende Standard-JSON-Antwort:
 
 ```json

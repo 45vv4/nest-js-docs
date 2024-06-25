@@ -1,4 +1,3 @@
-```markdown
 # Testen / Testing
 
 Automatisierte Tests gelten als wesentlicher Bestandteil jeder ernsthaften Softwareentwicklung. Automatisierung macht es einfach, einzelne Tests oder Test-Suiten während der Entwicklung schnell und einfach zu wiederholen. Dies hilft sicherzustellen, dass Veröffentlichungen die Qualitäts- und Leistungsziele erfüllen. Automatisierung hilft, die Abdeckung zu erhöhen und bietet eine schnellere Feedback-Schleife für Entwickler. Automatisierung steigert sowohl die Produktivität einzelner Entwickler als auch die Sicherstellung, dass Tests zu kritischen Zeitpunkten im Entwicklungslebenszyklus durchgeführt werden, wie z.B. bei der Quellcode-Kontrolle, der Feature-Integration und der Versionserstellung.

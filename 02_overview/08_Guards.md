@@ -2,6 +2,8 @@
 
 Ein Guard ist eine Klasse, die mit dem `@Injectable()` Dekorator annotiert ist und die `CanActivate`-Schnittstelle implementiert.
 
+![Guards](Guards_1.png)
+
 Guards haben eine einzige Verantwortung: Sie entscheiden, ob eine gegebene Anfrage vom Routen-Handler bearbeitet wird oder nicht, abhängig von bestimmten Bedingungen (wie Berechtigungen, Rollen, ACLs usw.), die zur Laufzeit vorliegen. Dies wird oft als Autorisierung bezeichnet. Autorisierung (und die damit oft zusammenarbeitende Authentifizierung) wurde in traditionellen Express-Anwendungen typischerweise durch Middleware gehandhabt. Middleware ist eine gute Wahl für die Authentifizierung, da Dinge wie Token-Validierung und das Anhängen von Eigenschaften an das Request-Objekt nicht stark mit einem bestimmten Routen-Kontext (und dessen Metadaten) verbunden sind.
 
 Aber Middleware ist von Natur aus "dumm". Sie weiß nicht, welcher Handler nach dem Aufruf der `next()` Funktion ausgeführt wird. Guards hingegen haben Zugriff auf die `ExecutionContext`-Instanz und wissen daher genau, was als Nächstes ausgeführt wird. Sie sind so konzipiert, dass sie, ähnlich wie Ausnahmefilter, Pipes und Interceptors, es ermöglichen, Verarbeitungsschritte genau an der richtigen Stelle im Anfrage-/Antwort-Zyklus einzufügen und dies deklarativ zu tun. Dies hilft, den Code DRY (Don't Repeat Yourself) und deklarativ zu halten.

@@ -2,6 +2,8 @@
 
 Anbieter sind ein grundlegendes Konzept in Nest. Viele der grundlegenden Nest-Klassen können als Anbieter behandelt werden – Services, Repositories, Fabriken, Helfer und so weiter. Die Hauptidee eines Anbieters ist, dass er als Abhängigkeit injiziert werden kann; das bedeutet, dass Objekte verschiedene Beziehungen zueinander aufbauen können und das "Verdrahten" dieser Objekte weitgehend dem Nest-Laufzeitsystem überlassen werden kann.
 
+![Components](Components_1.png)
+
 Im vorherigen Kapitel haben wir einen einfachen `CatsController` erstellt. Controller sollten HTTP-Anfragen bearbeiten und komplexere Aufgaben an Anbieter delegieren. Anbieter sind einfache JavaScript-Klassen, die in einem Modul als Anbieter deklariert werden.
 
 **HINWEIS / HINT:** Da Nest die Möglichkeit bietet, Abhängigkeiten auf eine objektorientiertere Weise zu entwerfen und zu organisieren, empfehlen wir dringend, die SOLID-Prinzipien zu befolgen.

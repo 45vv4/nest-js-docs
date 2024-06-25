@@ -2,6 +2,8 @@
 
 Middleware ist eine Funktion, die vor dem Routen-Handler aufgerufen wird. Middleware-Funktionen haben Zugriff auf die Request- und Response-Objekte sowie die nächste Middleware-Funktion im Anwendungszyklus. Die nächste Middleware-Funktion wird üblicherweise durch eine Variable namens `next` bezeichnet.
 
+![Middleware](Middlewares_1.png)
+
 Nest-Middleware entspricht standardmäßig der Express-Middleware. Die folgende Beschreibung aus der offiziellen Express-Dokumentation erklärt die Fähigkeiten von Middleware:
 
 Middleware-Funktionen können folgende Aufgaben erfüllen:

@@ -2,6 +2,8 @@
 
 Ein Modul ist eine Klasse, die mit einem `@Module()` Dekorator annotiert ist. Der `@Module()` Dekorator stellt Metadaten bereit, die Nest verwendet, um die Anwendungsstruktur zu organisieren.
 
+![Modules](Modules_1.png)
+
 Jede Anwendung hat mindestens ein Modul, ein Stamm-Modul. Das Stamm-Modul ist der Ausgangspunkt, den Nest verwendet, um den Anwendungsgraphen zu erstellen – die interne Datenstruktur, die Nest verwendet, um Modul- und Anbieterbeziehungen und -abhängigkeiten aufzulösen. Während sehr kleine Anwendungen theoretisch nur das Stamm-Modul haben können, ist dies nicht der typische Fall. Wir möchten betonen, dass Module als effektive Methode zur Organisation Ihrer Komponenten dringend empfohlen werden. Daher wird die resultierende Architektur für die meisten Anwendungen mehrere Module verwenden, von denen jedes einen eng verwandten Satz von Fähigkeiten kapselt.
 
 Der `@Module()` Dekorator nimmt ein einzelnes Objekt, dessen Eigenschaften das Modul beschreiben:
